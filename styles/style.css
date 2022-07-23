@@ -1,0 +1,196 @@
+html, body {
+  min-width:940px
+} 
+body {
+  background:#000;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:100%;
+  line-height:1em;
+  color:#858585
+}
+.page1, .page2, .page3 {
+  width:940px;
+  margin:0 auto;
+  overflow:hidden;
+  display: flex;
+  flex-direction: column;
+}
+.page1 footer,.page2 footer, .page3 footer{
+  margin-top: auto ;
+  text-align: center;
+}
+
+#header {
+  height:171px;
+  margin-bottom:-8px
+}
+
+
+.fleft a{
+  color: #f0f0f0;
+}
+.fleft a span{
+  color: red;
+}
+
+
+
+p {
+  margin:0;
+  padding:0
+}
+img {
+  border:0;
+  vertical-align:top
+}
+ul, ol {
+  list-style:none
+}
+.page1 #header .row-1 ,.page2 #header .row-1,.page3 #header .row-1{
+  height:112px;
+  width:100%;
+  overflow:hidden
+}
+.page1 #header .row-1 .fleft,.page2 #header .row-1 .fleft,.page3 #header .row-1 .fleft{
+  font-size:40px;
+  line-height:1.2em;
+  padding:26px 0 0 47px
+}
+.page2 #header .row-1 .fleft a, .page1 #header .row-1 .fleft a,.page3 #header .row-1 .fleft a{
+  text-decoration:none
+}
+
+.page1 #header .row-2, .page2 #header .row-2, .page3 #header .row-2 {
+  height:51px
+}
+.page1 #header .row-2 ul, .page2 #header .row-2 ul, .page3 #header .row-2 ul {
+  width:100%;
+  overflow:hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.page1 #header .row-2 ul li,.page2 #header .row-2 ul li,.page3 #header .row-2 ul li {
+  font-size:20px;
+  line-height:2.4em;
+  background-color:#000;
+  width: auto;
+  display: inline-block;
+}
+
+.page1 #header .row-2 ul li a, .page2 #header .row-2 ul li a, .page3 #header .row-2 ul li a {
+  text-decoration:none;
+  color:#f0f0f0;
+  width:184px;
+  height:56px;
+  float:left;
+  text-align:center
+}
+.page1 #header .row-2 ul li a:hover, .page2 #header .row-2 ul li a:hover, .page3 #header .row-2 ul li a:hover {
+  color:#d72a18;
+}
+.page1 #content h2, .page3 #content h2, .page3 #content h1 {
+  color: #f0f0f0;
+}
+
+.page1 #content .content {
+  padding:30px 0 39px 50px
+}
+.page1 #content .maincont table tbody #col1{
+  padding-right: 15px;
+  font-size:medium;
+}
+.page1 #content .maincont table tbody #col2{
+  padding-left: 15px;
+  font-size:medium;
+}
+.page1 #content .maincont .table tbody tr td{
+  padding: 1px;
+}
+.page1 #content .maincont .table tbody tr td span{
+  color:#f0f0f0;
+}
+.page1 #content{
+  width: 940px;
+}
+.page1 #content p{
+  font-size: medium;
+  padding-right: 15px;
+}
+.page3 #content .seasons p a{
+  color: #f0f0f0;
+}
+.page2 #content .cast .actor .round{
+  border-radius: 50%;
+  width: 95px;
+  height: 100%;
+}
+
+.page2 #content .cast .actor p span, .page2 #content h1{
+  color: #f0f0f0;
+}
+.page2 #content .cast table td{
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.page2 #content  .slider{
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+  height: 500px;
+}
+
+/* Картинка масштабируется по отношению к родительскому элементу: */
+.page2 #content .slider .item img {
+  /* Элемент меняет размер так, чтобы заполнить блок и сохранить пропорции: */
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+}
+
+/* Кнопки назад и вперёд: */
+.page2 #content .slider .previous, .page2 #content .slider .next {
+  /* Добавляет курсору иконку, когда тот оказывается над кнопкой: */
+  cursor: pointer;
+  /* Положение элемента задаётся относительно границ браузера: */
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  /* Оформление самих кнопок: */
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  /* Плавное появление фона при наведении курсора: */
+  transition: 0.6s ease;
+  /* Скругление границ: */
+  border-radius: 0 3px 3px 0;
+}
+.page2 #content .slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* При наведении курсора на кнопки добавляем фон кнопок: */
+.page2 #content  .slider .previous:hover,
+.page2 #content  .slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация слайдов: */
+.page2 #content .slider .item {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  /* Устанавливаем и изменяем степень прозрачности: */
+  from {
+      opacity: 0.4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+/*#page1 #header .row-2 ul li a {height:59px}*/
